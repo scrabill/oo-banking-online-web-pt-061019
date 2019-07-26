@@ -43,7 +43,7 @@ class Transfer
       self.status = "complete"
       self.has_transfered = true
     end
-    
+
     # if self.has_transfered == true || @sender.balance < @amount
     #   # binding.pry
     #   self.status = "rejected"
