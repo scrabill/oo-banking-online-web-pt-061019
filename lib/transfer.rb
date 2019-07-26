@@ -34,6 +34,7 @@ class Transfer
 
   def execute_transaction
 
+    ## Add @sender.balance < @amount to valid? Call before continuing with transaction
     if self.has_transfered == true || @sender.balance < @amount
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
